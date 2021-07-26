@@ -3,7 +3,7 @@
   "config": {
     "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
     "topics": "WRITEOP",
-    "connection.uri": "mongodb+srv://test:test@atc.oa4fi.mongodb.net/test?retryWrites=true&w=majority&connectTimeoutMS=300000",
+    "connection.uri": "mongodb//mongo1",
     "writemodel.strategy": "com.mongodb.kafka.connect.sink.writemodel.strategy.UpdateOneBusinessKeyTimestampStrategy",
     "database": "kafka",
     "collection": "oracle",
