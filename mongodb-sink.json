@@ -1,0 +1,21 @@
+{
+  "name": "OracleMongoDBSink",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "topics": "WRITEOP",
+    "connection.uri": "mongodb+srv://test:test@atc.oa4fi.mongodb.net/test?retryWrites=true&w=majority&connectTimeoutMS=300000",
+    "writemodel.strategy": "com.mongodb.kafka.connect.sink.writemodel.strategy.UpdateOneBusinessKeyTimestampStrategy",
+    "database": "kafka",
+    "collection": "oracle",
+    "document.id.strategy": "com.mongodb.kafka.connect.sink.processor.id.strategy.PartialValueStrategy",
+    "document.id.strategy.overwrite.existing": "true",
+    "document.id.strategy.partial.value.projection.type": "allowlist",
+    "document.id.strategy.partial.value.projection.list": "_id",
+    "errors.log.include.messages": true,
+    "errors.deadletterqueue.context.headers.enable": true,
+    "value.converter":"io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url":"http://schema-registry:8081",
+    "key.converter":"org.apache.kafka.connect.storage.StringConverter"
+
+  }
+}
