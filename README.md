@@ -6,5 +6,5 @@ Note: If you do not already have an Oracle environment, you can pull one from do
 
 Launch the environment by issuing: `docker-compose up -d build`
 
-Refer to the blog post (link TBD) for specific tutorial steps.
+Refer to the [blog post](https://www.mongodb.com/blog/post/data-movement-from-oracle-mongodb-made-easy-apache-kafka) for specific tutorial steps.
 
