@@ -4,7 +4,7 @@ This repo is part of the MongoDB blog post, "Data movement from Oracle to MongoD
 
 Note: If you do not already have an Oracle environment, you can pull one from docker via `docker pull store/oracle/database-enterprise:12.2.0.1-slim`
 
-Launch the environment by issuing: `docker-compose up -d build`
+Launch the environment by issuing: `docker-compose up -d --build`
 
 Refer to the [blog post](https://www.mongodb.com/blog/post/data-movement-from-oracle-mongodb-made-easy-apache-kafka) for specific tutorial steps.
 
